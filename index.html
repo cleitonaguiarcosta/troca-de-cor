@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>troca de cor</title>
+</head>
+<body>
+    <h1></h1>
+    <input onchange="init()" type="text">
+    <script>
+        function init(){
+            let title = document.querySelector('h1')
+            let caixa = document.querySelector('input').value
+
+            title.innerHTML=caixa
+
+            title.addEventListener('mouseleave',function(){
+                title.style.color = 'blue'
+
+            })
+
+            title.addEventListener('mouseenter',function(){
+                title.style.color = 'red'
+
+            })
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>
